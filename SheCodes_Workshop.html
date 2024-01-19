@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discus Throw</title>
+    <style>
+        
+        h1{
+            text-align: center;
+           color: #ffdcc3;
+           font-family:'Times New Roman', Times, serif ;
+           font-size: 50px;
+        }
+        h2{
+            text-align: center;
+            color: #f8f7de;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 15px 0px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        p{
+            text-align: center;
+            color: #f8f7de;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:400; 
+            font-size: 18px;
+            line-height: 25px; 
+            padding: 10px 0px;          
+        }
+        a {
+            display: block;
+            margin:0 auto;
+            color: #f8f7de;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            cursor: none;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 8px 0px;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            color: #ffc85c;
+            background-color:#393e46;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            padding: 10px 10px;
+            font-size: 18px;
+            font-weight: 500;
+            box-shadow: 5px 5px 3px #ffdb94;
+            border: none; 
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover{
+            color: #393e46 ;
+            background-color: #ffc85c;
+            opacity: 0.8;
+
+        }
+        a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+        .container{
+            background:linear-gradient( #c75643, #f0ac7b);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 60px ;
+            border-radius: 10px;
+        }
+        .important{
+            color:black ;
+        }       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        <em> Discus Throw</em> 
+    </h1>
+    <hr>
+    <h2>
+         An amazing sport to gym your whole body 💪🦵
+    </h2>
+    <img src="https://media.gettyimages.com/photos/sandra-perkovic-of-croatia-competes-in-womens-discus-throw-during-the-picture-id1152713803?s=2048x2048" width="600" alt="Discus Thrower"/>
+    <p>
+        The discus throw , also known as <span class="important">disc throw</span>, is a track and field event in which an
+        athlete throws a heavy disc—called a discus—in an attempt to mark a farther distance than their competitors. It is an
+        ancient sport, as demonstrated by the fifth-century-BC Myron statue Discobolus. Although not part of the modern
+        pentathlon, it was one of the events of the <span class="important">ancient Greek</span> pentathlon, which can be dated back to at least to 708 BC,
+        and it is part <strong> of the modern decathlon</strong>.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Discus_throw" target="_blank">
+        Learn more on Wikipedia
+    </a>
+    <br/>
+   
+    <button>
+       👉 Start exercising now
+    </button>
+    <p >
+        This page was built by Anna Dosiou
+    </p>
+
+    </div>
+    <script>
+        function exerciseButton(){
+            let name=prompt("What is your name?");
+            let age=prompt("How old are you?");
+            let email=prompt("What is your email?");
+            if ( name===""  && email==="" ){
+                alert ("Please tell us your name and email to contact with you🙏");
+                }else{
+                    alert ("Hello "+name+ ", we'll be in touch soon!😊")
+                }
+        }
+        let startButton=document.querySelector("button");
+        startButton.addEventListener("click", exerciseButton);
+    </script>
+</body>
+</html>
